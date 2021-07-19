@@ -1,5 +1,5 @@
 def wordcount(filename,listwords):
-	inputpath = "/Users/marta/Desktop/Vegan-filter/"+str(listwords)+'.txt'
+	inputpath = "/Users/romantauler/mutigscan/legacy/"+str(listwords)+'.txt'
 	inputfile = open (inputpath, "r")
 	inputread = inputfile.read()
 	inputline = inputread.split(',')
@@ -7,7 +7,7 @@ def wordcount(filename,listwords):
 	try:
 		if inputline == ['']:
 			raise ValueError ('nothing to process in ' + filename)
-		path = "/Users/marta/Desktop/Vegan-filter/"+filename+'.txt'
+		path = "/Users/romantauler/mutigscan/legacy/"+filename+'.txt'
 		file = open (path, "r")
 		read = file.read()
 		file.close()
